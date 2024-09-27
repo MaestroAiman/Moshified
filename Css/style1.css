@@ -1,0 +1,69 @@
+/*   
+table, th, td {
+    border: 1px, solid, #427fef;
+    border-left: 0;
+    border-right: 0;
+    border-collapse: collapse;
+    }
+    td, th {
+        padding: 10px;
+    }
+    th {
+        background-color: #427fef;
+        color: white;
+        }
+        tr :nth-child(odd) {
+            background-color: #eef7ff ;
+            }
+            tfoot {
+        text-align: left;
+        }
+        */
+body {
+    margin: 0px;
+    }
+table, th, td {
+    border: 1px, solid, #427fef;
+    border-left: 0;
+    border-right: 0;
+    border-collapse: collapse;
+}
+/* Header style */
+thead th {
+    background-color: #427fef;
+    color: white; /* Optional: to make the text more readable */
+}
+
+/* Odd rows style */
+tbody tr:nth-child(odd) {
+    background-color: #eef7ff;
+}
+
+/* Even rows style (if needed) */
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Optional: white for even rows */
+}
+
+/* Total row style */
+tfoot {
+    background-color: #427fef;
+    color: white; /* Optional: to make the text stand out */
+    font-weight: bold; /* Optional: to emphasize the total */
+    text-align: left;
+}
+th, td {
+    padding: 10px;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    background: tomato;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 30px 30px lightgray;
+}
+
+
+
+
