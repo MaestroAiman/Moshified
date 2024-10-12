@@ -250,7 +250,8 @@ a {
 .input-group .input {
     flex-grow: 1;
     border: 0;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4vw;
+    width: 0;
 }
 .input-group .btn {
     margin: 4px;
@@ -287,6 +288,7 @@ a {
 /*plans*/
 .plan {
     transition: transform .2s ease-out;
+    overflow-x: hidden;
 }
 .plan__name {
     color: white;
@@ -607,8 +609,9 @@ a {
     max-width: 670px;
 }
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -695,9 +698,9 @@ a {
 
 @media screen and (min-width: 768px) {
     .block-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        justify-items: center;
         align-items: flex-start;
     }
     .block-footer .collapsible {
